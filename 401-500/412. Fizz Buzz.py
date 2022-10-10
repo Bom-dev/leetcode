@@ -1,15 +1,15 @@
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         i = 1
-        list = []
-        while i <= n:
+        final = []
+        while i < n + 1:
             if i % 3 == 0 and i % 5 == 0:
-                list.append("FizzBuzz")
+                final.append("FizzBuzz")
             elif i % 3 == 0:
-                list.append("Fizz")
+                final.append("Fizz")
             elif i % 5 == 0:
-                list.append("Buzz")
+                final.append("Buzz")
             else:
-                list.append(str(i))
+                final.append(str(i))
             i += 1
-        return list
+        return final
